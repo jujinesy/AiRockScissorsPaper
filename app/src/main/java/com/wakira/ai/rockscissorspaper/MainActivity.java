@@ -10,8 +10,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -65,9 +68,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         })
                         .show();
             } else {
-
-
-
+                ImageView ivBall;
+                int v1 = new Random(System.currentTimeMillis()).nextInt(3);
+                ivBall = (ImageView) this.findViewById(R.id.ImageView1);
+                ivBall.setImageResource(R.drawable.paper + v1);
                 textFruit.setText(String.valueOf(--AI_Point));
                 SavePoint(AI_Point);
             }

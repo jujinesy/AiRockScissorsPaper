@@ -55,7 +55,7 @@ public class BuyActivity extends AppCompatActivity {
 
     public BuyActivity() {
         super();
-        this.AID = "appid=OA00698764";
+        this.AID = "appid=OA00702642";
         this.PIDs = null;
         this.mUIHandler = new UIHandler(this);
     }
@@ -87,14 +87,14 @@ public class BuyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_buy);
         this.mPlugin = IapPlugin.getPlugin(((Context)this), getResources().getString(R.string.mode));
         this.PIDs = new ArrayList();
-        this.PIDs.add("&product_id=0910053188&product_name=1회");
-        this.PIDs.add("&product_id=0910053187&product_name=5회");
-        this.PIDs.add("&product_id=0910053186&product_name=10회");
-        this.PIDs.add("&product_id=0910053185&product_name=50회");
-        this.PIDs.add("&product_id=0910053184&product_name=100회");
-        this.PIDs.add("&product_id=0910053183&product_name=500회");
-        this.PIDs.add("&product_id=0910053189&product_name=1000회");
-        this.PIDs.add("&product_id=0910053189&product_name=2000회");
+        this.PIDs.add("&product_id=0910053451&product_name=1회");
+        this.PIDs.add("&product_id=0910053452&product_name=5회");
+        this.PIDs.add("&product_id=0910053453&product_name=10회");
+        this.PIDs.add("&product_id=0910053454&product_name=50회");
+        this.PIDs.add("&product_id=0910053455&product_name=100회");
+        this.PIDs.add("&product_id=0910053456&product_name=500회");
+        this.PIDs.add("&product_id=0910053457&product_name=1000회");
+        this.PIDs.add("&product_id=0910053458&product_name=2000회");
         this.btnBuy1 = (Button) this.findViewById(R.id.buy_btnBuy1);
         this.btnBuy5 = (Button) this.findViewById(R.id.buy_btnBuy5);
         this.btnBuy10 = (Button) this.findViewById(R.id.buy_btnBuy10);
