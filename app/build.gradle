@@ -21,7 +21,7 @@ android {
             applicationVariants.all { variant ->
                 variant.outputs.each {
                     output->
-                        def df = new SimpleDateFormat("yyyy-MM-dd HH.mm")
+                        def df = new SimpleDateFormat("yyyy-MM-dd")//yyyy-MM-dd HH.mm.SSS
                         df.setTimeZone(TimeZone.getDefault())
                         def file = output.outputFile
                         output.outputFile = new File(file.parent,
