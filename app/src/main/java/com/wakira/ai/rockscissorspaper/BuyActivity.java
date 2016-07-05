@@ -1,6 +1,5 @@
 package com.wakira.ai.rockscissorspaper;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -12,11 +11,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import com.skplanet.dev.guide.helper.ConverterFactory;
 import com.skplanet.dodo.IapPlugin;
 import com.skplanet.dodo.IapResponse;
-
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Locale;
@@ -146,7 +143,7 @@ public class BuyActivity extends AppCompatActivity {
         });
         this.btnCancel.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(BuyActivity.this, "구매를 취소하셨습니다", Toast.LENGTH_SHORT).show();
+                Toast.makeText(BuyActivity.this, "구매를 취소하셨습니다.", Toast.LENGTH_SHORT).show();
                 BuyActivity.this.setResult(1);
                 BuyActivity.this.finish();
             }
