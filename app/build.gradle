@@ -10,7 +10,7 @@ android {
         applicationId "com.wakira.ai.rockscissorspaper"
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 1
+        versionCode 101
         versionName "1.0.1"
     }
     buildTypes {
