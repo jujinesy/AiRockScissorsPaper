@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     protected void onStart() {
-        //Toast.makeText(getApplicationContext(),"onStart() Call.",Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(),"onStart() Call.",Toast.LENGTH_LONG).show();test
         if (init() == 0) {
             AI_Point = 10;
             SavePoint(AI_Point);
