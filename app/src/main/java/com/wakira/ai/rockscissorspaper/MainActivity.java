@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView textFruit = (TextView) findViewById(R.id.textView3);
-        textFruit.setText(String.valueOf(AI_Point));
+        ((TextView)findViewById(R.id.textView3)).setText(String.valueOf(AI_Point));
+        ((TextView)findViewById(R.id.textView4)).setText("v"+BuildConfig.VERSION_NAME);
 
         btn1 = (Button) findViewById(R.id.Button1);
         btn2 = (Button) findViewById(R.id.Button2);

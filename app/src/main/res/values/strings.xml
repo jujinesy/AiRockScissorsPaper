@@ -2,6 +2,7 @@
     <string name="app_name">인공지능 가위바위보</string>
     <string name="point_name">AI 포인트 :</string>
     <string name="point_value">0</string>
+    <string name="version">v0.0.0</string>
     <string name="mode">release</string>
     <string name="mode_test">development release</string>
 

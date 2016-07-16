@@ -25,7 +25,7 @@ android {
                         df.setTimeZone(TimeZone.getDefault())
                         def file = output.outputFile
                         output.outputFile = new File(file.parent,
-                                file.name.replace("app", "RockScissorsPaper - " + defaultConfig.versionName + " - " + df.format(new Date())))
+                                file.name.replace("app-", "RockScissorsPaper - " + defaultConfig.versionName + " - " + df.format(new Date()) + " - "))
                 }
             }
 
