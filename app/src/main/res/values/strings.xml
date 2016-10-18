@@ -2,7 +2,7 @@
     <string name="app_name">인공지능 가위바위보</string>
     <string name="point_name">AI 포인트 :</string>
     <string name="point_value">0</string>
-    <string name="version">v0.0.0</string>
+    <string name="version">010-1234-1234   v0.0.0</string>
     <string name="mode">release</string>
     <string name="mode_test">development release</string>
 
@@ -16,4 +16,6 @@
     <string name="AI500">500개 구매\n(50000원)</string>
     <string name="AI1000">1000개 구매\n(100000원)</string>
     <string name="AI2000">2000개 구매\n(200000원)</string>
+    <string name="AI2500">2500개 구매\n(250000원)</string>
+    <string name="AI3000">3000개 구매\n(300000원)</string>
 </resources>

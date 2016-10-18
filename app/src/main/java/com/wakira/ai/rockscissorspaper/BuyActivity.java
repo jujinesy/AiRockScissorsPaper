@@ -46,6 +46,8 @@ public class BuyActivity extends AppCompatActivity {
     Button btnBuy500;
     Button btnBuy1000;
     Button btnBuy2000;
+    Button btnBuy2500;
+    Button btnBuy3000;
     Button btnCancel;
     private IapPlugin mPlugin;
     private UIHandler mUIHandler;
@@ -92,6 +94,8 @@ public class BuyActivity extends AppCompatActivity {
         this.PIDs.add("&product_id=0910053456&product_name=500회");
         this.PIDs.add("&product_id=0910053457&product_name=1000회");
         this.PIDs.add("&product_id=0910053458&product_name=2000회");
+        this.PIDs.add("&product_id=0910062333&product_name=2500회");
+        this.PIDs.add("&product_id=0910062334&product_name=3000회");
         this.btnBuy1 = (Button) this.findViewById(R.id.buy_btnBuy1);
         this.btnBuy5 = (Button) this.findViewById(R.id.buy_btnBuy5);
         this.btnBuy10 = (Button) this.findViewById(R.id.buy_btnBuy10);
@@ -100,6 +104,8 @@ public class BuyActivity extends AppCompatActivity {
         this.btnBuy500 = (Button) this.findViewById(R.id.buy_btnBuy500);
         this.btnBuy1000 = (Button) this.findViewById(R.id.buy_btnBuy1000);
         this.btnBuy2000 = (Button) this.findViewById(R.id.buy_btnBuy2000);
+        this.btnBuy2500 = (Button) this.findViewById(R.id.buy_btnBuy2500);
+        this.btnBuy3000 = (Button) this.findViewById(R.id.buy_btnBuy3000);
         this.btnCancel = (Button) this.findViewById(R.id.buy_btnCancel);
         this.btnBuy1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -139,6 +145,16 @@ public class BuyActivity extends AppCompatActivity {
         this.btnBuy2000.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 BuyActivity.this.doPayment(7, 200000, 2000);
+            }
+        });
+        this.btnBuy2500.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                BuyActivity.this.doPayment(8, 250000, 2500);
+            }
+        });
+        this.btnBuy3000.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                BuyActivity.this.doPayment(9, 300000, 3000);
             }
         });
         this.btnCancel.setOnClickListener(new View.OnClickListener() {
