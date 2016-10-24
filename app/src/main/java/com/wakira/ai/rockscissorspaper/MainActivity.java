@@ -44,9 +44,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         ((TextView)findViewById(R.id.textView3)).setText(String.valueOf(AI_Point));
         TelephonyManager mgr = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
-        String temp = mgr.getLine1Number();
-        ((TextView)findViewById(R.id.textView4)).setText("010-"+temp.substring(temp.length()-8,temp.length()-4)+"-"+temp.substring(temp.length()-4,temp.length())+"   v"+BuildConfig.VERSION_NAME);//폰번호가져오기
-        //((TextView)findViewById(R.id.textView4)).setText("v"+BuildConfig.VERSION_NAME);//폰번호가져오기
+        String phonenumber;
+        if( mgr.getLine1Number() == null)
+            phonenumber = "[폰번호 없음]";
+        else {
+            phonenumber = "010-"+mgr.getLine1Number().substring(mgr.getLine1Number().length()-8,mgr.getLine1Number().length()-4)+"-"+mgr.getLine1Number().substring(mgr.getLine1Number().length()-4,mgr.getLine1Number().length());
+        }
+
+        ((TextView)findViewById(R.id.textView4)).setText(phonenumber+"   v"+BuildConfig.VERSION_NAME);//폰번호가져오기
+        //((TextView)findViewById(R.id.textView4)).setText("v"+BuildConfig.VERSION_NAME);
 
         btn1 = (Button) findViewById(R.id.Button1);
         btn2 = (Button) findViewById(R.id.Button2);
