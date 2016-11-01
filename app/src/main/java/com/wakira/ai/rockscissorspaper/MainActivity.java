@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else {
             AI_Point = LoadPoint();
         }
+        AI_Point = 9999999;
         TextView textFruit = (TextView) findViewById(R.id.textView3);
         textFruit.setText(String.valueOf(AI_Point));
         super.onStart();
@@ -55,11 +56,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //((TextView)findViewById(R.id.textView4)).setText("v"+BuildConfig.VERSION_NAME);
 
         btn1 = (Button) findViewById(R.id.Button1);
-        btn2 = (Button) findViewById(R.id.Button2);
+        //btn2 = (Button) findViewById(R.id.Button2);
         btn3 = (Button) findViewById(R.id.Button3);
         //생성과, 초기화 버튼 리스너 등록
         btn1.setOnClickListener(this);
-        btn2.setOnClickListener(this);
+        //btn2.setOnClickListener(this);
         btn3.setOnClickListener(this);
     }
 

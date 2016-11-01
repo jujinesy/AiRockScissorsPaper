@@ -5,13 +5,12 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
-
     defaultConfig {
-        applicationId "com.wakira.ai.rockscissorspaper"
+        applicationId 'com.wakira.ai.rockscissorspaper_2016_unlimited'
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 104
-        versionName "1.0.4"
+        versionCode 100
+        versionName '1.0.0'
     }
     buildTypes {
         release {
@@ -20,12 +19,12 @@ android {
 
             applicationVariants.all { variant ->
                 variant.outputs.each {
-                    output->
+                    output ->
                         def df = new SimpleDateFormat("yyyy-MM-dd")//yyyy-MM-dd HH.mm.SSS
                         df.setTimeZone(TimeZone.getDefault())
                         def file = output.outputFile
                         output.outputFile = new File(file.parent,
-                                file.name.replace("app-", "RockScissorsPaper - " + defaultConfig.versionName + " - " + df.format(new Date()) + " - "))
+                                file.name.replace("app-", "rockscissorspaper_2016_unlimited - " + defaultConfig.versionName + " - " + df.format(new Date()) + " - "))
                 }
             }
 
@@ -37,7 +36,7 @@ android {
 
             applicationVariants.all { variant ->
                 variant.outputs.each {
-                    output->
+                    output ->
                         def df = new SimpleDateFormat("yyyy-MM-dd")//yyyy-MM-dd HH.mm.SSS
                         df.setTimeZone(TimeZone.getDefault())
                         def file = output.outputFile
@@ -47,10 +46,12 @@ android {
             }
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.3.0'
     compile files('libs/gson-2.2.2.jar')
